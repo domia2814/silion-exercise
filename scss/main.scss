@@ -1,3 +1,12 @@
+@keyframes moveAnimation {
+    from {
+              transform: translateY(60%);
+    }
+    to {
+              transform: translateY(0);
+    }
+  }
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -62,6 +71,7 @@ body {
                 position: absolute;
                 top: 100%;
                 visibility: hidden;
+                opacity: 0;
                 left: 0;
                 width: 14rem;
                 height: auto;
@@ -88,6 +98,7 @@ body {
         li:hover {
             .submenu {
                 visibility: visible;
+                opacity:1;
             }
         }
 
@@ -309,6 +320,9 @@ body {
         .item:hover {
             .action-links {
                 opacity: 1;
+                .ti-eye {animation: moveAnimation 200ms;}
+                .ti-heart {animation: moveAnimation 400ms;}
+                .ti-shopping-cart {animation: moveAnimation 600ms;}
         
                 a {
                     visibility: visible;      
@@ -322,6 +336,7 @@ body {
                             border: #ff5353 solid;
                             color: #fff; 
                             transition: all 300ms ease;
+                            
                         }
                 }
             }

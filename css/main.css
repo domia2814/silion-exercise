@@ -1,3 +1,19 @@
+@-webkit-keyframes moveAnimation {
+  from {
+    transform: translateY(60%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveAnimation {
+  from {
+    transform: translateY(60%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -58,6 +74,7 @@ body {
   position: absolute;
   top: 100%;
   visibility: hidden;
+  opacity: 0;
   left: 0;
   width: 14rem;
   height: auto;
@@ -78,6 +95,7 @@ body {
 }
 .navbar__menu li:hover .submenu {
   visibility: visible;
+  opacity: 1;
 }
 .navbar__menu .ti-angle-down {
   width: 0.7rem;
@@ -268,6 +286,18 @@ body {
 }
 .products__items .item:hover .action-links {
   opacity: 1;
+}
+.products__items .item:hover .action-links .ti-eye {
+  -webkit-animation: moveAnimation 200ms;
+          animation: moveAnimation 200ms;
+}
+.products__items .item:hover .action-links .ti-heart {
+  -webkit-animation: moveAnimation 400ms;
+          animation: moveAnimation 400ms;
+}
+.products__items .item:hover .action-links .ti-shopping-cart {
+  -webkit-animation: moveAnimation 600ms;
+          animation: moveAnimation 600ms;
 }
 .products__items .item:hover .action-links a {
   visibility: visible;
