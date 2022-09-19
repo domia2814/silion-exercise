@@ -77,9 +77,9 @@ body {
 .navbar__menu li .submenu {
   background-color: #fff;
   position: absolute;
-  top: 100%;
   visibility: hidden;
   opacity: 0;
+  top: 100%;
   left: 0;
   width: 14rem;
   height: auto;
@@ -265,7 +265,6 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   color: #888;
-  text-transform: capitalize;
   text-decoration: none;
   margin-bottom: 0;
 }
@@ -322,6 +321,7 @@ body {
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #eae2d8;
   width: 100%;
   height: auto;
 }
@@ -403,7 +403,6 @@ body {
   color: #888;
   text-decoration: none;
   line-height: 1.9rem;
-  list-style: none;
   text-align: left;
 }
 .footer__top .column-2 {
