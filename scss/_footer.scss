@@ -1,0 +1,175 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #e9e2d8;
+    height: auto;
+    margin-top: 3rem;
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
+        border-bottom: 0.1rem solid #d6d8d9;
+        padding-bottom: 5rem;
+        padding-top: 3rem;
+
+        p {
+            font-size: 1rem;
+            font-weight: 700;
+            text-align: left;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            a {
+                font-size: 0.9rem;
+                color: #888;
+                text-decoration: none;
+                line-height: 1.9rem;
+                text-align: left;
+            }
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+            width: fit-content;
+
+            &-buttons {
+                display: flex;
+                flex-direction: column;
+
+                .buttons {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 0.5rem;
+                    border-bottom: 0.1rem solid #d6d8d9;
+                    padding-bottom: 2rem;
+
+                    .android,
+                    .apple {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 0.2rem;
+                        border-radius: 0.3rem;
+                        background-color: #fff;
+                        color: #000;
+                        text-decoration: none;
+                        padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+                        height: 2.5rem;
+                        width: 7.5rem;
+
+                        .ti-android {
+                            color: #ff5353;
+                            font-size: 1.3rem;
+                            margin-right: 0.3rem;
+                            left: 0.3px;
+                            top: 50%;
+                        }
+
+                        .ti-apple {
+                            color: #fff;
+                            font-size: 1.3rem;
+                            margin-right: 0.3rem;
+                            left: 0.3rem;
+                            top: 50%;
+                        }
+
+                        p {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            text-align: left;
+                            padding-top: 1.3rem;
+
+                            span {
+                                font-size: 0.6rem;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+                    .apple {
+                        background-color: #ff5353;
+                        color: #fff;
+                    }
+
+                    .android:hover {
+                        background-color: #ff5353;
+                        transition: all 300ms ease-in-out;
+
+                        p,
+                        .ti-android {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            &-socialm {
+                padding: 0;
+
+                .widgets {
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 0.6rem;
+
+                    a {
+                        background-color: #fff;
+                        color: #000;
+                        text-decoration: none;
+                        text-align: center;
+                        height: 2rem;
+                        width: 2rem;
+                        line-height: 2.1rem;
+
+                        .ti-facebook,
+                        .ti-twitter-alt,
+                        .ti-pinterest,
+                        .ti-instagram {
+                            color: #000;
+                        }
+                    }
+
+                    a:hover {
+                        background-color: #ff5353;
+                        transition: all 300ms ease-in-out;
+
+                        .ti-facebook,
+                        .ti-twitter-alt,
+                        .ti-pinterest,
+                        .ti-instagram {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        font-size: 0.9rem;
+        color: #888;
+        text-align: center;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            color: #ff5353;
+        }
+    }
+}

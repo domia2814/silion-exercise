@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+@keyframes moveAnimation {
+    from {
+              transform: translateY(60%);
+    }
+    to {
+              transform: translateY(0);
+    }
+  }

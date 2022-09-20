@@ -1,3 +1,14 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+
+#mobile-menu {
+  display: none;
+}
+
 @-webkit-keyframes moveAnimation {
   from {
     transform: translateY(60%);
@@ -6,6 +17,7 @@
     transform: translateY(0);
   }
 }
+
 @keyframes moveAnimation {
   from {
     transform: translateY(60%);
@@ -14,17 +26,6 @@
     transform: translateY(0);
   }
 }
-#mobile-menu {
-  display: none;
-}
-
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  color: #000;
-  font-size: 16px;
-}
-
 .header {
   display: flex;
   background-color: #fef7f6;
@@ -207,6 +208,58 @@ body {
   height: auto;
 }
 
+.banner2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #eae2d8;
+  width: 100%;
+  height: auto;
+}
+.banner2__text {
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 29rem;
+  margin-right: 5rem;
+}
+.banner2__text span {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 4.5rem;
+}
+.banner2__text h1 {
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+.banner2__text a {
+  background-color: #ff5353;
+  border-radius: 0.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 0.8;
+  padding: 1.1rem 3rem 1.1rem 3rem;
+}
+.banner2__text a:hover {
+  background-color: #fff;
+  color: #0056b3;
+  transition: all 300ms ease-in-out;
+}
+.banner2__image {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: auto;
+}
+.banner2__image img {
+  width: 100%;
+  height: auto;
+}
+
 .products {
   background-color: #fff;
 }
@@ -316,58 +369,6 @@ body {
   transition: all 300ms ease;
 }
 
-.banner2 {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #eae2d8;
-  width: 100%;
-  height: auto;
-}
-.banner2__text {
-  text-align: center;
-  text-transform: uppercase;
-  max-width: 29rem;
-  margin-right: 5rem;
-}
-.banner2__text span {
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
-  font-size: 3.6rem;
-  margin-bottom: 4.5rem;
-}
-.banner2__text h1 {
-  font-weight: 300;
-  margin-bottom: 4rem;
-}
-.banner2__text a {
-  background-color: #ff5353;
-  border-radius: 0.2rem;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
-  line-height: 0.8;
-  padding: 1.1rem 3rem 1.1rem 3rem;
-}
-.banner2__text a:hover {
-  background-color: #fff;
-  color: #0056b3;
-  transition: all 300ms ease-in-out;
-}
-.banner2__image {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-  height: auto;
-}
-.banner2__image img {
-  width: 100%;
-  height: auto;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -405,7 +406,7 @@ body {
   line-height: 1.9rem;
   text-align: left;
 }
-.footer__top .column-2 {
+.footer__top .footer-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -414,11 +415,11 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
-.footer__top .column-2__app {
+.footer__top .footer-right-buttons {
   display: flex;
   flex-direction: column;
 }
-.footer__top .column-2__app .app-buttons {
+.footer__top .footer-right-buttons .buttons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -426,8 +427,8 @@ body {
   border-bottom: 0.1rem solid #d6d8d9;
   padding-bottom: 2rem;
 }
-.footer__top .column-2__app .app-buttons .android,
-.footer__top .column-2__app .app-buttons .apple {
+.footer__top .footer-right-buttons .buttons .android,
+.footer__top .footer-right-buttons .buttons .apple {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -440,24 +441,24 @@ body {
   height: 2.5rem;
   width: 7.5rem;
 }
-.footer__top .column-2__app .app-buttons .android .ti-android,
-.footer__top .column-2__app .app-buttons .apple .ti-android {
+.footer__top .footer-right-buttons .buttons .android .ti-android,
+.footer__top .footer-right-buttons .buttons .apple .ti-android {
   color: #ff5353;
   font-size: 1.3rem;
   margin-right: 0.3rem;
   left: 0.3px;
   top: 50%;
 }
-.footer__top .column-2__app .app-buttons .android .ti-apple,
-.footer__top .column-2__app .app-buttons .apple .ti-apple {
+.footer__top .footer-right-buttons .buttons .android .ti-apple,
+.footer__top .footer-right-buttons .buttons .apple .ti-apple {
   color: #fff;
   font-size: 1.3rem;
   margin-right: 0.3rem;
   left: 0.3rem;
   top: 50%;
 }
-.footer__top .column-2__app .app-buttons .android p,
-.footer__top .column-2__app .app-buttons .apple p {
+.footer__top .footer-right-buttons .buttons .android p,
+.footer__top .footer-right-buttons .buttons .apple p {
   display: flex;
   flex-direction: column;
   font-size: 0.8rem;
@@ -466,32 +467,32 @@ body {
   text-align: left;
   padding-top: 1.3rem;
 }
-.footer__top .column-2__app .app-buttons .android p span,
-.footer__top .column-2__app .app-buttons .apple p span {
+.footer__top .footer-right-buttons .buttons .android p span,
+.footer__top .footer-right-buttons .buttons .apple p span {
   font-size: 0.6rem;
   font-weight: 400;
 }
-.footer__top .column-2__app .app-buttons .apple {
+.footer__top .footer-right-buttons .buttons .apple {
   background-color: #ff5353;
   color: #fff;
 }
-.footer__top .column-2__app .app-buttons .android:hover {
+.footer__top .footer-right-buttons .buttons .android:hover {
   background-color: #ff5353;
   transition: all 300ms ease-in-out;
 }
-.footer__top .column-2__app .app-buttons .android:hover p,
-.footer__top .column-2__app .app-buttons .android:hover .ti-android {
+.footer__top .footer-right-buttons .buttons .android:hover p,
+.footer__top .footer-right-buttons .buttons .android:hover .ti-android {
   color: #fff;
 }
-.footer__top .column-2__sm {
+.footer__top .footer-right-socialm {
   padding: 0;
 }
-.footer__top .column-2__sm .sm-widgets {
+.footer__top .footer-right-socialm .widgets {
   display: flex;
   justify-content: flex-start;
   gap: 0.6rem;
 }
-.footer__top .column-2__sm .sm-widgets a {
+.footer__top .footer-right-socialm .widgets a {
   background-color: #fff;
   color: #000;
   text-decoration: none;
@@ -500,20 +501,20 @@ body {
   width: 2rem;
   line-height: 2.1rem;
 }
-.footer__top .column-2__sm .sm-widgets a .ti-facebook,
-.footer__top .column-2__sm .sm-widgets a .ti-twitter-alt,
-.footer__top .column-2__sm .sm-widgets a .ti-pinterest,
-.footer__top .column-2__sm .sm-widgets a .ti-instagram {
+.footer__top .footer-right-socialm .widgets a .ti-facebook,
+.footer__top .footer-right-socialm .widgets a .ti-twitter-alt,
+.footer__top .footer-right-socialm .widgets a .ti-pinterest,
+.footer__top .footer-right-socialm .widgets a .ti-instagram {
   color: #000;
 }
-.footer__top .column-2__sm .sm-widgets a:hover {
+.footer__top .footer-right-socialm .widgets a:hover {
   background-color: #ff5353;
   transition: all 300ms ease-in-out;
 }
-.footer__top .column-2__sm .sm-widgets a:hover .ti-facebook,
-.footer__top .column-2__sm .sm-widgets a:hover .ti-twitter-alt,
-.footer__top .column-2__sm .sm-widgets a:hover .ti-pinterest,
-.footer__top .column-2__sm .sm-widgets a:hover .ti-instagram {
+.footer__top .footer-right-socialm .widgets a:hover .ti-facebook,
+.footer__top .footer-right-socialm .widgets a:hover .ti-twitter-alt,
+.footer__top .footer-right-socialm .widgets a:hover .ti-pinterest,
+.footer__top .footer-right-socialm .widgets a:hover .ti-instagram {
   color: #fff;
 }
 .footer__bottom {
@@ -611,11 +612,11 @@ body {
   }
   .footer__top {
     display: grid;
-    grid-template-columns: 6rem 6rem 6rem 8rem;
+    grid-template-columns: 8rem 8rem 9rem 10rem;
     grid-template-rows: auto;
-    gap: 4rem;
+    gap: 3rem;
   }
-  .footer__top .column-2 {
+  .footer__top .footer-right {
     display: flex;
     height: 100%;
   }
@@ -671,7 +672,7 @@ body {
     grid-template-rows: auto;
     text-align: left;
   }
-  .footer__top .column-2 {
+  .footer__top .footer-right {
     height: auto;
   }
 }
@@ -700,7 +701,7 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  .footer__top .column-2__sm {
+  .footer__top .footer-right-socialm {
     padding-top: 1rem;
   }
 }

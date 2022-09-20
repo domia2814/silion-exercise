@@ -1,0 +1,119 @@
+.banner {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+
+    &__text {
+        text-align: center;
+        max-width: 29rem;
+        height: auto;
+
+        span {
+            color: #565656;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 3.6rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        a {
+            background-color: #ff5353;
+            border-radius: 0.2rem;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            line-height: 0.8;
+            padding: 1.1rem 3rem 1.1rem 3rem;
+        }
+
+        a:hover {
+            background-color: #fff;
+            color: #0056b3;
+            transition: all 300ms ease-in-out;
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.banner2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #eae2d8;
+    width: 100%;
+    height: auto;
+
+    &__text {
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 29rem;
+        margin-right: 5rem;
+
+        span {
+            font-family: "Dancing Script", cursive;
+            font-weight: 700;
+            font-size: 3.6rem;
+            margin-bottom: 4.5rem;
+        }
+
+        h1 {
+            font-weight: 300;
+            margin-bottom: 4rem;
+        }
+
+        a {
+            background-color: #ff5353;
+            border-radius: 0.2rem;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            line-height: 0.8;
+            padding: 1.1rem 3rem 1.1rem 3rem;
+        }
+
+        a:hover {
+            background-color: #fff;
+            color: #0056b3;
+            transition: all 300ms ease-in-out;
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
