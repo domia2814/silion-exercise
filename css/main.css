@@ -685,6 +685,7 @@ body {
   }
   .products__items .item {
     max-width: 100%;
+    flex-basis: 90%;
   }
   .products__items .item .action-links {
     width: 100%;
